@@ -5,7 +5,8 @@
 }
 
 .body{
-    background: url("../img/bg.jpg"); 
+    background: url("../img/bg2.jpg"); 
+    background-position: left;
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -17,16 +18,18 @@
 #scoreBox{
     position: absolute;
     top: 9px;
-    right: 200px;
+    right: 270px;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
+    color: bisque;
 }
 
 #hiscoreBox{
+    color: bisque;
     position: absolute;
-    top: 59px;
-    right: 140px;
+    top: 9px;
+    right: 11px;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
@@ -37,20 +40,25 @@
     width: 90vmin;
     height: 92vmin;
     border: 2px solid black;
+    border-radius: 12px;
+    position: absolute;
+    box-shadow: -6px 0px 30px 0px #ffa9a9;
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
 
 .head{
-    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    background: linear-gradient(black, white);
     border: 2px solid rgb(34, 4, 34); 
     transform: scale(1.02);
     border-radius: 9px;
 }
 
 .snake{
-    background-color: purple;
+  /* background-color: rgb(75, 75, 75); */
+  background: linear-gradient(rgba(255, 54, 54, 0.938), black);
+ 
     border: .25vmin solid white;
     border-radius: 12px;
 }
@@ -59,4 +67,12 @@
     background: linear-gradient(red, purple);
     border: .25vmin solid black;
     border-radius: 8px;
+}
+#snake1{
+    position: absolute;
+    left: 0px;
+}
+#snake2{
+    position: absolute;
+    right: 0px;
 }
